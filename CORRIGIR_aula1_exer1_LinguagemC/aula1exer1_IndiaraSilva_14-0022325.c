@@ -76,12 +76,12 @@ int main(void){
       if(opc_num==1){
         abre(&arq);
         printf("Insira nome do proprietário: ");
-        scanf(" %[^\n]", p[n].nome);
+        scanf(" %[^\n]", p[j].nome);
         scanf("%*[^\n]"); scanf("%*c");
         printf("Insira o CPF do proprietário: ");
-        scanf(" %s", p[n].cpf);
+        scanf(" %s", p[j].cpf);
         printf("Insira a data de nascimento do proprietário: ");
-        scanf(" %s", p[n].data_nascimento);
+        scanf(" %s", p[j].data_nascimento);
         printf("Quantos carros deseja cadastrar: ");
         scanf("%d",&qtd_carro);
         fprintf(arq, "Nome do proprietário: %s\nCPF do proprietário: %s\nData de nascimento do proprietário: %s\n", p[j].nome, p[j].cpf, p[j].data_nascimento);
@@ -89,13 +89,13 @@ int main(void){
         printf("Cadastro do carro:\n");
         for(i = 0; i < qtd_carro; i++){
           printf("Insira o modelo do carro nº %d: ", i+1);
-          scanf(" %s", c[j].modelo);
+          scanf(" %s", c[i].modelo);
           printf("Insira a marca do carro nº %d: ",i+1);
-          scanf(" %s", c[j].marca );
+          scanf(" %s", c[i].marca );
           printf("Insira a cor do carro nº %d: ",i+1);
-          scanf(" %s", c[j].cor);
+          scanf(" %s", c[i].cor);
           printf("Insira o renavam do carro nº %d: ",i+1);
-          scanf(" %s: ", c[j].renavam );
+          scanf(" %s: ", c[i].renavam );
           fprintf(arq, "\n");
           fprintf(arq, "Carro nº:%d\nCor:%s\nMarca:%s\nModelo:%s\nRenavam:%s\n", i+1, c[j].cor, c[j].marca, c[j].modelo, c[j].renavam);
           fprintf(arq, "----------------\n");
@@ -103,6 +103,7 @@ int main(void){
         printf("Dados salvos no arquivo com sucesso!\n");
         fclose(arq);
         n++;
+
         // p = realloc(p, j*sizeof(struct proprietario));
         // c = realloc(c, j*sizeof(struct proprietario));
 
