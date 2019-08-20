@@ -1,0 +1,14 @@
+Aula 03 20/08/19
+
+chaves são indetificações que permitem localizar um registro
+
+indice servem para achar mais rápido um dado, uma sequencia indexada usa essa lógica.
+
+Um arquivo indexado possui uma chave e um endereço(arquivo de endereço que possui nome e endereço facilita pra achar o o arquivo já que tem o endereço)
+para guardar a referência ao endereço endereço, as desvantagens são que ocupa mais espaço.
+
+arquivo direto  é um arquivo que acessa direto a informação que precisa, mas usa um processamento maior
+
+chave primária seria a chave que dentro do banco de dados seria mais importante
+
+hash é o argumento de pesquisa
