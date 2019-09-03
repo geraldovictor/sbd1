@@ -12,3 +12,27 @@ arquivo direto  é um arquivo que acessa direto a informação que precisa, mas 
 chave primária seria a chave que dentro do banco de dados seria mais importante
 
 hash é o argumento de pesquisa
+
+-----------------------------------------------
+aula 04 22/08
+
+Documentação é extremamente importante pra banco de dados
+
+toda entidade é expressa por um substantivo
+
+entidade é expresso por um verbo
+
+para estabelecer um relacionamento é preciso da redundancia
+
+para diagrama de esquema só sublinha a chave primaria
+
+cardinalidade é altamente relevante ela pode dizer como é feito o relacionamento
+o quanto que uma entidade participa de um relacionamento
+1:1 --- 1:n -------- 1:n
+min: maximo | o verde some é o máximo de cada | min: maximo
+
+atributo multivalorado são atributos que podem ter mais de um valor
+atributo derivados sao os que dependem de outros
+
+------------------------------------------
+o brModelo não é uma ferramenta case pois ela só determina um escopo no caso o de banco de dados, ferramentas case integram outros ambientes de programação.
